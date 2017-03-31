@@ -26,7 +26,7 @@ public class AbstractShellIntegrationTest  {
     }
 
 
-    public static JLineShellComponent getShell() {
+    protected static JLineShellComponent getShell() {
         return shell;
     }
 

@@ -48,3 +48,27 @@ mvnsh hello
 // Spring Shell 1.2.0.RELEASE log opened at 2017-03-30 15:10:39
 help
 mvnsh hello
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-30 19:47:17
+mvnsh hello
+// null 1.2.0.RELEASE log opened at 2017-03-30 19:47:51
+mvnsh hello
+// null 1.2.0.RELEASE log opened at 2017-03-31 00:24:12
+mvnsh hello
+// null 1.2.0.RELEASE log opened at 2017-03-31 00:24:20
+mvnsh hello
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 00:24:23
+help
+mvnsh search --artifact butterknife
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 00:25:36
+mvnsh search butterknife
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 00:27:23
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 00:27:25
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 00:41:22
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 00:43:53
+// [failed] mvnsh a
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 00:49:36
+mvnsh a
+mvnsh hello
+mvnhello
+mvnsh a
+mvnsh a
