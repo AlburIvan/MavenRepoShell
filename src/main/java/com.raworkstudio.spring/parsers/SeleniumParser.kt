@@ -1,6 +1,6 @@
 package com.raworkstudio.spring.parsers
 
-import com.raworkstudio.spring.BuildSystemEnum
+import com.raworkstudio.spring.configurations.BuildSystemEnum
 import org.openqa.selenium.By
 import org.openqa.selenium.firefox.FirefoxDriver
 import java.util.*

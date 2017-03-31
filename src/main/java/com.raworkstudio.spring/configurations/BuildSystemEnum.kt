@@ -1,4 +1,4 @@
-package com.raworkstudio.spring
+package com.raworkstudio.spring.configurations
 
 /**
  * Created by Ivan on 3/30/2017.

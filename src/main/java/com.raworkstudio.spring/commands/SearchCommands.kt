@@ -1,6 +1,6 @@
 package com.raworkstudio.spring.commands
 
-import com.raworkstudio.spring.parsers.SeleniumParser
+import com.raworkstudio.spring.CommandCache
 import org.springframework.shell.core.CommandMarker
 import org.springframework.shell.core.annotation.CliAvailabilityIndicator
 import org.springframework.shell.core.annotation.CliCommand
@@ -33,6 +33,9 @@ open class SearchCommands : CommandMarker {
             @CliOption(key = arrayOf("", "a", "artifact"), mandatory = true, help = "The name of the artifact you're searching for!") name: String) {
 
         // here we have to
+        var commandCache = CommandCache()
+        commandCache.put(name)
+//        println(commandCache.fileCache?.absolutePath)
 
 
     }

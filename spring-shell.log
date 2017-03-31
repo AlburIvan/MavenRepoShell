@@ -72,3 +72,55 @@ mvnsh hello
 mvnhello
 mvnsh a
 mvnsh a
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:00:45
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:17:07
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:18:41
+mvnsh hbi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:19:01
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:19:27
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:20:33
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:20:58
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:21:16
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:40:13
+// [failed] mvnsh si
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:41:30
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:44:21
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:44:53
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:58:19
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:58:38
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 10:59:40
+// [failed] mvnsh hio
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:01:33
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:02:02
+// [failed] mvnsh hs
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:02:34
+// [failed] mvnsh shui
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:05:14
+// [failed] mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:09:03
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:11:28
+mvnsh hi
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:13:01
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:14:21
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:14:55
+mvnsh hi
+// Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:16:37
+mvnsh butterknife
+mvnsh other

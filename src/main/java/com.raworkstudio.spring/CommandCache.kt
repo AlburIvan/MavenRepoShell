@@ -1,7 +1,11 @@
 package com.raworkstudio.spring
 
+import com.google.gson.Gson
+import java.io.File
+
 /**
- * This class stores the previous commands already issued by the user and use the result to give better suggestions based on previous choices
+ * This class stores the previous commands already issued by the user and
+ * use the result to give better suggestions based on previous choices
  *
  * process:
  *
@@ -16,7 +20,10 @@ package com.raworkstudio.spring
  *        Deserialization should happen as JSON
  *          - GSON
  */
-class CommandCache {
+class CommandCache () {
+
+    var fileCache: File
+
 
     // store file here
     /*
@@ -42,9 +49,6 @@ class CommandCache {
 
      */
 
-    init {
-        // read file
-    }
 
     fun put(artifact: String) {
 
@@ -53,23 +57,39 @@ class CommandCache {
         // if it doesn't exist insert it
         //
         // if exist return the highest value
-        
+
+
     }
 
 
     fun exists(artifact: String):Boolean {
-        return true
+        return File("./cache/cmd.cache").exists()
     }
-
 
 
     fun delete(artifact: String) {
 
     }
 
+    fun save() {
+        fileCache.printWriter().use { out ->
+            out.println("")
+        }
+    }
 
+    init {
+        fileCache = File("./cache/cmd.cache")
 
+        var gson = Gson()
 
+//        gson.fromJson(fileCache.readText())
+//        File("./cache/cmd.cache").printWriter().use { out ->
+//            out.println("File readed")
+//        }
+
+        //var fileCache = File
+        println("javaClass = $javaClass")
+    }
 
 
 }
