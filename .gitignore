@@ -12,5 +12,7 @@ classes/
 target/
 target/*
 
+out/
+out/*
 
 spring-shell.log
