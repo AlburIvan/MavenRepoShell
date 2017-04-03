@@ -1,4 +1,17 @@
 .idea/
 .idea/*
+
+.gradle/
+.gradle/*
+
+build/
+
+classes/
+
+
+
 target/
 target/*
+
+
+spring-shell.log
