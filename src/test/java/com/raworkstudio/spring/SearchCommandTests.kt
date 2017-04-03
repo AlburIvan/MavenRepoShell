@@ -13,7 +13,7 @@ class SearchCommandTests : AbstractShellIntegrationTest() {
 
     @Test fun `Expects output of Hello World Given an initial state`() {
 
-        val commandResult = AbstractShellIntegrationTest.getShell().executeCommand("mvnsh hello")
+        val commandResult = AbstractShellIntegrationTest.getShell().executeCommand("mvnhello")
 
         MatcherAssert
                 .assertThat("Hello command expects 'hello'",

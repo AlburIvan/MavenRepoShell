@@ -124,3 +124,70 @@ mvnsh hi
 // Spring Shell 1.2.0.RELEASE log opened at 2017-03-31 11:16:37
 mvnsh butterknife
 mvnsh other
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-01 14:28:28
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-01 19:08:07
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-01 19:10:35
+help
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-01 19:52:25
+help
+// null 1.2.0.RELEASE log opened at 2017-04-01 20:27:07
+mvnhello
+// null 1.2.0.RELEASE log opened at 2017-04-01 20:38:50
+mvnhello
+// null 1.2.0.RELEASE log opened at 2017-04-01 21:16:05
+mvnhello
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-01 21:17:30
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 01:12:18
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 01:16:10
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 01:18:08
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 01:18:27
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 01:19:19
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 01:23:29
+help
+// [failed] mvnsh
+// [failed] mvnsh
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 01:25:16
+// [failed] mvnsh
+mvnhello
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 15:53:13
+mvnsh -a help\
+mvnsh -a h
+mvnsh --a a
+mvnsh hi
+mvnsh --artifact pp
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 15:54:10
+mvnsh a
+mvnsh --artifact ppl
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 15:54:41
+help
+// [failed] mvnsh
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:11:55
+// [failed] mvnsh -a a
+// [failed] mvnsh -f -a aaa
+// [failed] mvnsh -f
+// [failed] mvnsh -f asdasd
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:19:57
+mvnsh -f asdas
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:20:15
+mvnsh -f asd
+mvnsh --f true --artifact butterknife
+mvnsh --f true --artifact butterknife
+mvnsh --artifact butterknife
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:31:29
+mvnsh --f true --artifact butterknife
+mvnsh  --artifact butterknife
+mvnsh --f --artifact butterknife
+mvnsh -f
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:36:03
+// [failed] help mvnsh
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:37:10
+mvnsh --f --artifact butterknife
+mvnsh --artifact butterknife
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:56:34
+// [failed] mvnsh --f --artifact butterknife'
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:57:02
+// [failed] mvnsh --f --artifact butterknife
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 16:58:55
+// [failed] mvnsh --f --artifact butterknife
+// Spring Shell 1.2.0.RELEASE log opened at 2017-04-02 17:07:19
+// [failed] mvnsh --f --artifact ppl

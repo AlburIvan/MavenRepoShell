@@ -1,0 +1,12 @@
+[
+  {
+    "artifact": "test",
+    "url": "http://raworkstudio.com",
+    "preference": "1"
+  },
+  {
+    "artifact": "butterknife",
+    "url": "https://mvnrepository.com/artifact/com.jakewharton/butterknife",
+    "preference": "3"
+  }
+]

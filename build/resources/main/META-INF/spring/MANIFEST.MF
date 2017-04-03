@@ -1,0 +1,2 @@
+Main-Class: com.raworkstudio.spring.Main;
+Manifest-Version: 1.0.0
