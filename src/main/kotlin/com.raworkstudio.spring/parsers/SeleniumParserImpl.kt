@@ -1,8 +1,9 @@
 package com.raworkstudio.spring.parsers
 
 import com.raworkstudio.spring.configurations.BuildSystemEnum
+import com.raworkstudio.spring.models.History
 import org.openqa.selenium.By
-import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.chrome.ChromeDriver
 import java.util.*
 
 /**
@@ -10,27 +11,56 @@ import java.util.*
  */
 class SeleniumParserImpl : Parser {
 
-//    private var driver: FirefoxDriver = null!!
+    private var driver: ChromeDriver? = null
 //            get() = FirefoxDriver()
 
 
     init {
-//        driver = FirefoxDriver()
-//        driver.get("https://mvnrepository.com/")
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ivan Alburquerque\\Downloads\\Others\\chromedriver_win32\\chromedriver.exe")
+//        var capabilities = DesiredCapabilities.chrome()
+//        capabilities.setCapability("    ", "--no-startup-window")
+        driver = ChromeDriver()
     }
 
 
-    override fun queryArtifacts(query: String): HashMap<String, String> {
+    override fun queryArtifacts(query: String): HashMap<String, History> {
 
-        //        val commandCache = CommandCacheProvider()
-//        commandCache.put(name)
+        var artifactMap = HashMap<String, History>()
+
+        driver?.get("https://mvnrepository.com/")
+
+        var searchBar = driver?.findElement(By.id("query"))
+        var searchButton = driver?.findElement(By.className("button"))
+
+        searchBar?.sendKeys(query)
+        searchButton?.click()
 
 
-        var artifactMap = HashMap<String, String>()
+        // get total result founds
 
-//        var searchBar = driver.findElement(By.id("query"))
-//        var searchButton = driver.findElement(By.className("button"))
+//        var _driver = WebDriverWait
 
+
+//        var _wait = WebDriverWait(driver, 300000)
+//
+//        _wait.until { d ->
+//            d.findElement(By.ById("Id_Your_UIElement"))
+//        }
+
+        var div_mainContent = driver?.findElementById("maincontent")
+
+        var resultItemList = div_mainContent?.findElements(By.className("im"))
+
+        resultItemList?.forEach { it ->
+
+            var history = History()
+
+            history.artifact = it.findElement(By.cssSelector("#maincontent > div:nth-child(2) > div.im-header > h2 > a:nth-child(2)")).text
+            history.url = it.findElement(By.cssSelector("#maincontent > div:nth-child(2) > div.im-header > h2 > a:nth-child(2)")).getAttribute("href")
+            history.preference = 0
+
+            artifactMap.put(history.hashCode().toString(), history)
+        }
 
         return artifactMap
     }

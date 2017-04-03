@@ -1,7 +1,6 @@
 package com.raworkstudio.spring.commands
 
-import com.raworkstudio.spring.CommandCacheProvider
-import com.raworkstudio.spring.parsers.SeleniumParserImpl
+import com.raworkstudio.spring.configurations.CommandCacheProvider
 import org.springframework.shell.core.CommandMarker
 import org.springframework.shell.core.annotation.CliAvailabilityIndicator
 import org.springframework.shell.core.annotation.CliCommand

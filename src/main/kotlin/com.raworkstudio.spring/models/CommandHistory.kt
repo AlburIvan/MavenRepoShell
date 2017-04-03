@@ -1,4 +1,4 @@
-package com.raworkstudio.spring.commands
+package com.raworkstudio.spring.models
 
 import java.util.*
 
@@ -7,6 +7,6 @@ import java.util.*
  */
 class CommandHistory {
 
-    public var history: Array<History> = Array()
+    public var history: ArrayList<History> = ArrayList()
 
 }
