@@ -1,11 +1,17 @@
 package com.raworkstudio.spring.commands
 
 import com.raworkstudio.spring.configurations.CommandCacheProvider
+import com.raworkstudio.spring.models.History
+import com.raworkstudio.spring.models.getPackageName
+import com.raworkstudio.spring.parsers.JSoupParserImpl
 import org.springframework.shell.core.CommandMarker
 import org.springframework.shell.core.annotation.CliAvailabilityIndicator
 import org.springframework.shell.core.annotation.CliCommand
 import org.springframework.shell.core.annotation.CliOption
 import org.springframework.stereotype.Component
+import java.util.*
+
+
 
 /**
  * Created by Ivan Alburquerque on 3/27/2017
@@ -34,33 +40,45 @@ open class SearchCommands : CommandMarker {
             @CliOption(key = arrayOf("", "a", "artifact"), mandatory = true, help = "The name of the artifact you're searching for!") name: String,
             @CliOption(key = arrayOf("f", "favorite"), mandatory = false, help = "....", specifiedDefaultValue = "true") favorite: String?) {
 
-
-
 //        if(favorite == null)
 //            println(favorite)
 
-
-        println(name)
-
-        var commandCache = CommandCacheProvider()
-
-        if (commandCache.exists()) {
-            println("file exists")
-        }
-
-        commandCache.put("butterknife")
+        var cache = CommandCacheProvider()
 
         // get input -> search on cache
-        //                      -> if exists -> return compile string
-        //                      -> if doesn't exists -> search from mvnrepo -> return options
-        //           -> select from options
-        //                      -> save reference
+        if (cache.existsOnCache(name)) {
+            //  -> if exists -> return compile string
+            println(cache.get(name))
 
 
-//        var parser = SeleniumParserImpl()
 //
-//        parser.queryArtifacts(name)
+//            if (cache.get(name) is List<*>) {
+//
+//            }
 
+//            val clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard()
+//            clpbrd.setContents("...", null)
+        } else {
+            // -> if doesn't exists -> search from mvnrepo -> return options
+
+            val artifactMap: HashMap<String, History>
+
+            val parser = JSoupParserImpl()
+
+            artifactMap = parser.queryArtifacts(name)
+
+            println("---------------------------------------------")
+            artifactMap.forEach { s, history ->
+                println("${history.artifact} |  ${history.getPackageName()}")
+            }
+            println("---------------------------------------------")
+
+
+            //
+            //
+            //           -> select from options
+            //                      -> save reference
+        }
 
 
     }

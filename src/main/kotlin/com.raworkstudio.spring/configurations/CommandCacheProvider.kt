@@ -60,6 +60,10 @@ class CommandCacheProvider() {
         }
     }
 
+    public fun get(artifact: String): Any? {
+        return commandHistory.history.filter { it.artifact.contains(artifact, true) }
+    }
+
 
     /**
      * deletes an entry of the command history
@@ -84,6 +88,17 @@ class CommandCacheProvider() {
 
     public fun exists(): Boolean {
         return getFile().exists()
+    }
+
+    /**
+     * deletes an entry of the command history
+     */
+    public fun existsOnCache(artifact: String): Boolean {
+        val history = commandHistory.history.find { it.artifact.contains(artifact, true)}
+        if (history != null) {
+            return true
+        }
+        return false
     }
 
     /**

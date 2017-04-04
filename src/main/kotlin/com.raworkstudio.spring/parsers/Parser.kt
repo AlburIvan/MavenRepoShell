@@ -2,6 +2,8 @@ package com.raworkstudio.spring.parsers
 
 import com.raworkstudio.spring.configurations.BuildSystemEnum
 import com.raworkstudio.spring.models.History
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 import java.util.*
 
 /**
@@ -16,5 +18,10 @@ interface Parser {
     public fun queryArtifactVersions(query: String): HashMap<String, String>
 
     public fun getArtifact(version: String, buildSystem: BuildSystemEnum): String
+
+
+    public fun getWebPageDocument(query: String): Document {
+       return Jsoup.connect("https://mvnrepository.com/search?q=$query").get()
+    }
 
 }
