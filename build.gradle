@@ -74,6 +74,9 @@ dependencies {
 
     // [Klaxon]
     compile group: 'com.beust', name: 'klaxon', version:'0.29'
+    
+    // [Jsoup]
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.10.2'
 
     // [Kotson]
     compile group: 'com.github.salomonbrys.kotson', name: 'kotson', version: '2.5.0'
