@@ -2,7 +2,8 @@ package com.raworkstudio.spring
 
 import com.raworkstudio.spring.commands.SearchCommands
 import com.raworkstudio.spring.models.History
-import com.raworkstudio.spring.parsers.SeleniumParserImpl
+import com.raworkstudio.spring.models.getPackageName
+import com.raworkstudio.spring.parsers.JSoupParserImpl
 import org.hamcrest.MatcherAssert
 import org.junit.Test
 import java.util.*
@@ -20,34 +21,24 @@ class SearchCommandTests : AbstractShellIntegrationTest() {
         MatcherAssert
                 .assertThat("Hello command expects 'hello'",
                         commandResult.result.toString() == "Hello World from class " + SearchCommands.TAG)
-    }
 
+    }
 
     @Test fun `Given an artifact name, When the artifact equals 'x', Then a list of artifact names should be returned`() {
 
-        //val commandResult = AbstractShellIntegrationTest.getShell().executeCommand("mvnsh --f --artifact butterknife")
         var artifactMap: HashMap<String, History>
 
-
-        var parser = SeleniumParserImpl()
+        var parser = JSoupParserImpl()
 
         artifactMap = parser.queryArtifacts("butterknife")
 
-
         artifactMap.forEach { s, history ->
-
-            println("$s | $history")
+            println("${history.url} | ${history.getPackageName()}")
         }
 
-
-
-        MatcherAssert.assertThat("...", true)
-
+        MatcherAssert.assertThat("Artifacts where found", artifactMap.size > 0)
     }
 
-    @Test fun expects_a_list_of_artifact_version() {
-
-    }
 
 
 }
