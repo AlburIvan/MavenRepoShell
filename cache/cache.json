@@ -5,12 +5,12 @@
     "preference": 1
   },
   {
-    "artifact": "butterknife",
+    "artifact": "butterknife$2",
     "url": "",
     "preference": 0
   },
   {
-    "artifact": "butterknife",
+    "artifact": "butterknife$1",
     "url": "",
     "preference": 0
   }
